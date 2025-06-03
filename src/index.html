@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/main.scss"/>
+
+  <title>Bookshop</title>
+</head>
+<body>
+  <div id="app">
+   
+   
+    <header class="header">
+  <div class="container header__container">
+    <div class="logo">BOOKSHOP</div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">Categories</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__icons">
+      <button class="icon icon--user" title="Login"></button>
+      <button class="icon icon--search" title="Search"></button>
+      <button class="icon icon--cart" title="Cart"></button>
+    </div>  
+  </div>
+</header>
+
+<section class="promo">
+  <div class="container promo__wrapper">
+    <div class="slider">
+      <div class="slider__wrapper"></div>
+    </div>
+
+    <div class="promo__aside">
+  <a href="#" class="promo-card promo-card--purple">
+    <span>CHANGE<br>OLD BOOK<br><strong>ON NEW</strong></span>
+    <span class="arrow">→</span>
+  </a>
+
+  <a href="#" class="promo-card promo-card--pink">
+    <span>TOP<br>100<br><strong>BOOKS<br>2022</strong></span>
+    <span class="arrow">→</span>
+  </a>
+</div>
+
+  <div class="slider__dots">
+    <!-- точки отрисовываются через JS -->
+  </div>
+</section>
+
+<section class="main">
+  <div class="container main__wrapper">
+    <aside class="categories">
+      <ul class="categories__list">
+        <li class="category active" data-category="Architecture">Architecture</li>
+        <li class="category" data-category="Art">Art & Fashion</li>
+        <li class="category" data-category="Biography">Biography</li>
+        <li class="category" data-category="Business">Business</li>
+        <li class="category" data-category="Cooking">Food & Drink</li>
+        <li class="category" data-category="Health">Health & Wellbeing</li>
+        <li class="category" data-category="History">History & Politics</li>
+        <li class="category" data-category="Fiction">Fiction</li>
+        <li class="category" data-category="Drama">Drama</li>
+      </ul>
+    </aside>
+
+    <div class="books">
+      <!-- сюда будем рендерить карточки книг -->
+    </div>
+  </div>
+</section>
+
+<div class="load-more-wrapper">
+  <button class="load-more">Load more</button>
+</div>
+
+
+
+
+
+  </div>
+</body>
+</html>
